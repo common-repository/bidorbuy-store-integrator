@@ -1,0 +1,22 @@
+{
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://composer.extreme-idea.com"
+    }
+  ],
+  "require": {
+    "com.extremeidea.bidorbuy/storeintegrator-core": "2.0.1",
+    "com.extremeidea.php/php-multirequest": "2.0.1",
+    "symfony/http-foundation": "2.8.33",
+    "monolog/monolog": "^1.23.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "com\\extremeidea\\bidorbuy\\storeintegrator\\woocommerce\\": "classes/"
+    },
+    "exclude-from-classmap": [
+      "**/symfony/polyfill-php54/Resources/stubs/**"
+    ]
+  }
+}
